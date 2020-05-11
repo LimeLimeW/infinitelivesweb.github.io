@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Infinite Lives</title>
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+
+	html {
+		font-family: 'Montserrat';
+		background: rgb(247,210,245);
+background: linear-gradient(233deg, rgba(247,210,245,1) 0%, rgba(184,139,220,1) 100%);
+	}
+
+	h1{
+		font-size: 5em;
+		font-family: 'Montserrat';
+		color: 	#000000;
+		margin:0;
+	}
+	.intro p{
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+	}
+	</style>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section">
+		<div class="intro">
+			<h2>A Bit of Chiptune & All You Can Eat presents : </h2>
+			<h1>Infinite Lives</h1>
+		</div>
+	</div>
+
+	<div class="section">
+			<div class="intro">
+				<h1>Schedule</h1>
+				<h1>
+					Tonight
+				</h1>
+				<div class="event"><h3>Cyanide Dansen + Merristasis (VJ) - 20h30 GMT</h3></div>
+			</div>
+		</div>
+
+	<div class="section">
+			<h1>About</h1>
+
+			  </div>
+
+
+		</div>
+		</div>
+</div>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript" src="style.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['home', 'schedule', 'about'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['', '', '']
+    });
+</script>
+
+</body>
+</html>
